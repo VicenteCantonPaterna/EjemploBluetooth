@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2" >
+
+        <TextView
+            android:id="@+id/viewTitulo"
+            android:text="@string/ConexionEstablecida"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp" />
+
+        <EditText
+            android:id="@+id/textEnviar"
+            android:inputType="text"
+            android:hint="Escribe aqui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewTitulo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="63dp" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:text="@string/Enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/textEnviar"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/viewRecepcion"
+            android:text="@string/viewRecibido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnEnviar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="83dp" />
+
+        <TextView
+            android:id="@+id/textRecepcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewRecepcion"
+            android:layout_alignLeft="@+id/btnEnviar"
+            android:layout_alignStart="@+id/btnEnviar"
+            android:layout_marginTop="44dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
